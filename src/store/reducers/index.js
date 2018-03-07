@@ -6,7 +6,6 @@ import sidebar from './sidebarReducer';
 import video from './videoReducer';
 import challenges from './challengesReducer';
 import students from './studentsReduser';
-import adminInfo from './adminReducer';
 import notifications from './notificationsReducer';
 import tasksProgress from './tasksProgressReducer';
 import videoQuestionSummery from './videoQuestionSummeryReducer';
@@ -32,7 +31,6 @@ const reducers = combineReducers({
     video,
     challenges,
     students,
-    adminInfo,
     notifications,
     tasksProgress,
     videoQuestionSummery,
