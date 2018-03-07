@@ -7,9 +7,6 @@ import '../assets/css/all.css';
 import ContentHeaderContainer from "../containers/General/ContentHeaderContainer";
 import SidebarContainer from "../containers/General/SidebarContainer";
 
-// import VideoContainer from "../containers/Video/VideoContainer";
-// import VideoItemContainer from "../containers/Video/VideoItemContainer";
-
 import OnBoardingContainer from "../containers/OnBoarding/OnBoardingContainer";
 import DashboardContainer from "../containers/Dashboard/DashboardUser/DashboardContainer";
 import NotFound from './Generals/NotFound'
@@ -66,18 +63,6 @@ const App = ({collapsed, expandedOnHover}) => (
                 path='/on-boarding'
                 component={OnBoardingContainer}
             />
-
-
-            {/*<Route*/}
-                {/*exact*/}
-                {/*path='/video/:name'*/}
-                {/*component={VideoContainer}*/}
-            {/*/>*/}
-            {/*<Route*/}
-                {/*path='/video/physics/id'*/}
-                {/*component={VideoItemContainer}*/}
-            {/*/>*/}
-
 
             <Route path = "*" component = {NotFound}/>
         </Switch>
