@@ -168,49 +168,6 @@ class ContentHeader extends Component {
          })
      );
 
-    renderUserMenu = (user, onLogout) => (
-        <ul className="nav navbar-nav">
-            <li className="dropdown user user-menu">
-                <Link
-                    to="#"
-                    className="dropdown-toggle"
-                    data-toggle="dropdown"
-                >
-                    <i className="glyphicon glyphicon-user"/>
-                    <span>
-                        {user.name}
-                        {user.surname}
-                        <i className="caret"/>
-                    </span>
-                </Link>
-                <ul className="dropdown-menu">
-                    <li className="user-header bg-light-blue">
-                        <img
-                            src={userImage}
-                            className="img-circle"
-                            alt="Admin"
-                        />
-                        <p>
-                            {user.name} {user.surname} - {user.position}
-                            <small>Admin since Nov. 2014</small>
-                        </p>
-                    </li>
-                    <li className="user-footer">
-                        <div className="pull-right">
-                            <Link
-                                to="/login"
-                                className="btn btn-default btn-flat"
-                                onClick={() => {
-                                    onLogout();
-                                }}
-                            >Sign out</Link>
-                        </div>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    );
-
     //LifecycleMethods
     componentDidMount() {
         this.props.onNotificationsLoad();
@@ -243,15 +200,15 @@ class ContentHeader extends Component {
                         }}
                     >
                     </Link>
-                    <div className="navbar-custom-menu">
-                        <div className="navbar-left">
-                            <ul className="nav navbar-nav">
-                                {this.renderMessagesMenu(notifications)}
-                                {this.renderTasksMenu(tasksProgress)}
-                            </ul>
-                        </div>
-                        {this.renderUserMenu(user, onLogout)}
-                    </div>
+                    {/*<div className="navbar-custom-menu">*/}
+                        {/*<div className="navbar-left">*/}
+                            {/*<ul className="nav navbar-nav">*/}
+                                {/*{this.renderMessagesMenu(notifications)}*/}
+                                {/*{this.renderTasksMenu(tasksProgress)}*/}
+                            {/*</ul>*/}
+                        {/*</div>*/}
+                        {/*{this.renderUserMenu(user, onLogout)}*/}
+                    {/*</div>*/}
                 </nav>
             </header>
         )

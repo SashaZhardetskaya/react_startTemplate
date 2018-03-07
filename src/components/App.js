@@ -10,8 +10,6 @@ import SidebarContainer from "../containers/General/SidebarContainer";
 // import VideoContainer from "../containers/Video/VideoContainer";
 // import VideoItemContainer from "../containers/Video/VideoItemContainer";
 
-import ChallengesContainer from "../containers/Challenges/ChallengesContainer";
-import SettingsContainer from '../containers/Settings/SettingsContainer';
 import OnBoardingContainer from "../containers/OnBoarding/OnBoardingContainer";
 import DashboardContainer from "../containers/Dashboard/DashboardUser/DashboardContainer";
 import NotFound from './Generals/NotFound'
@@ -62,14 +60,6 @@ const App = ({collapsed, expandedOnHover}) => (
             <Route
                 path='/dashboard'
                 component={DashboardContainer}
-            />
-            <Route
-                path='/challenges'
-                component={ChallengesContainer}
-            />
-            <Route
-                path='/settings'
-                component={SettingsContainer}
             />
 
             <Route
