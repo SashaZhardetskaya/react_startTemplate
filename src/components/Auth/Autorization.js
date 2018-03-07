@@ -1,8 +1,6 @@
 import React from 'react';
 import {Redirect, Route} from "react-router-dom";
 
-import GeneralHeader from '../Generals/GeneralHeader';
-import GeneralFooter from '../Generals/GeneralFooter';
 import ForgotPassword from './ForgotPassword';
 import LoginContainer from '../../containers/Auth/LoginContainer';
 import SignUp from './Signup'
@@ -12,7 +10,6 @@ import SignUp from './Signup'
  */
 const Authorization = ({pathname}) => (
     <div>
-        <GeneralHeader/>
         {
             pathname !== '/login' &&
             pathname !== '/signup' &&
@@ -38,7 +35,6 @@ const Authorization = ({pathname}) => (
             path='/forgot-password'
             component={ForgotPassword}
         />
-        <GeneralFooter/>
     </div>
 );
 

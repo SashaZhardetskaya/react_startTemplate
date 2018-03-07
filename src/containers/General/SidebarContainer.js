@@ -1,6 +1,6 @@
 import {connect} from "react-redux";
 import * as AuthActions from '../../store/actions/authActions';
-import Sidebar from "../../components/Generals/Sidebar";
+import Sidebar from "../../components/Common/Sidebar";
 import * as SidebarActions from "../../store/actions/sidebarActions";
 
 const mapStateToProps = (state) => ({

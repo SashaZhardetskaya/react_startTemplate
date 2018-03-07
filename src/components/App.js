@@ -9,7 +9,7 @@ import SidebarContainer from "../containers/General/SidebarContainer";
 
 import OnBoardingContainer from "../containers/OnBoarding/OnBoardingContainer";
 import DashboardContainer from "../containers/Dashboard/DashboardUser/DashboardContainer";
-import NotFound from './Generals/NotFound'
+import NotFound from './Common/NotFound'
 
 /**
  *
