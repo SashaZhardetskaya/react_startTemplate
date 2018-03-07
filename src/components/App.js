@@ -7,7 +7,6 @@ import '../assets/css/all.css';
 import ContentHeaderContainer from "../containers/General/ContentHeaderContainer";
 import SidebarContainer from "../containers/General/SidebarContainer";
 
-import OnBoardingContainer from "../containers/OnBoarding/OnBoardingContainer";
 import DashboardContainer from "../containers/Dashboard/DashboardUser/DashboardContainer";
 import NotFound from './Common/NotFound'
 
@@ -59,11 +58,6 @@ const App = ({collapsed, expandedOnHover}) => (
                 component={DashboardContainer}
             />
 
-            <Route
-                path='/on-boarding'
-                component={OnBoardingContainer}
-            />
-
             <Route path = "*" component = {NotFound}/>
         </Switch>
 
@@ -72,15 +66,8 @@ const App = ({collapsed, expandedOnHover}) => (
             id="footer"
         >
             <div className="pull-right hidden-xs">
-                <b>By</b> 99point9.ca
+                <b>By</b> Sasha
             </div>
-            <strong>
-                Copyright &copy; 2016-2017
-                <Link to="#">
-                    99point9.ca
-                </Link>.
-            </strong>
-            All rights reserved.
         </footer>
     </div>
 );

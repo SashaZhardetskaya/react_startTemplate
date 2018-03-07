@@ -1,5 +1,4 @@
 import * as AuthActions from '../actions/authActions';
-import * as InfoActions from '../actions/infoActions';
 
 const defaultState = {
     authorized: false,
