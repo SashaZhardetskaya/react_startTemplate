@@ -42,9 +42,6 @@ class Sidebar extends Component {
                     className="sidebar-menu"
                     key={`category_${index}`}
                 >
-                    <li className="header">
-                        {category.title}
-                    </li>
                     {
                         category.items &&
                         this.renderCategoryItems(index, category.items)
@@ -83,53 +80,11 @@ class Sidebar extends Component {
                         ? 'treeview-menu-expanded'
                         : '')
                 }>
-                    {
-                        item.items &&
-                        this.renderCategorySubItems(`${catId}_${index}`, item.items)
-                    }
                 </ul>
             </li>
         ))
     );
 
-    renderCategorySubItems = (parId, items) => (
-        items.map((childItem, index) => (
-            <li key={`childItem_${parId}_${index}`}>
-                <Link to="#">
-                    <i className="fa fa-angle-double-right"/>
-                    {childItem}
-                </Link>
-            </li>
-        ))
-    );
-
-    renderSearchForm = () => (
-        <form
-            action="#"
-            method="get"
-            className="sidebar-form"
-        >
-            <div className="input-group">
-                <input
-                    type="text"
-                    name="q"
-                    className="form-control"
-                    placeholder="Search..."
-                    onChange={this.searchInSidebar}
-                />
-                <span className="input-group-btn">
-                    <button
-                        type='submit'
-                        name='search'
-                        id='search-btn'
-                        className="btn btn-flat"
-                    >
-                        <i className="fa fa-search"/>
-                    </button>
-                </span>
-            </div>
-        </form>
-    );
 
     render() {
         return (
@@ -140,7 +95,6 @@ class Sidebar extends Component {
             >
                 <section className="sidebar">
                     {this.renderUserInfo()}
-                    {this.renderSearchForm()}
                     {this.renderCategories()}
                 </section>
             </div>
