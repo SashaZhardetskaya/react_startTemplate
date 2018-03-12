@@ -8,7 +8,7 @@ import '../assets/css/all.css';
 import ContentHeaderContainer from "../containers/General/ContentHeaderContainer";
 import SidebarContainer from "../containers/General/SidebarContainer";
 
-import DashboardContainer from "../containers/Dashboard/DashboardUser/DashboardContainer";
+import Dashboard from "../components/Dashboard/DashboardUser/Dashboard";
 import NotFound from './Common/NotFound'
 
 /**
@@ -36,7 +36,7 @@ const App = ({collapsed, expandedOnHover}) => (
                     () => (
                         <Redirect
                             to="/dashboard"
-                            component={DashboardContainer}
+                            component={Dashboard}
                         />
                     )
                 }
@@ -49,14 +49,14 @@ const App = ({collapsed, expandedOnHover}) => (
                     () => (
                         <Redirect
                             to="/dashboard"
-                            component={DashboardContainer}
+                            component={Dashboard}
                         />
                     )
                 }
             />
             <Route
                 path='/dashboard'
-                component={DashboardContainer}
+                component={Dashboard}
             />
 
             <Route path="*" component={NotFound}/>

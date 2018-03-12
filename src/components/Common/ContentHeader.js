@@ -26,8 +26,6 @@ class ContentHeader extends Component {
 
     //LifecycleMethods
     componentDidMount() {
-        this.props.onNotificationsLoad();
-        this.props.onTaskProgressLoad();
     }
 
     render() {
@@ -66,8 +64,6 @@ ContentHeader.propTypes = {
     }),
     onLogout: PropTypes.func.isRequired,
     onSidebarToggleCollapse: PropTypes.func.isRequired,
-    onNotificationsLoad: PropTypes.func.isRequired,
-    onTaskProgressLoad: PropTypes.func.isRequired,
     notifications: PropTypes.oneOfType([
         PropTypes.object.isRequired,
         PropTypes.array.isRequired,

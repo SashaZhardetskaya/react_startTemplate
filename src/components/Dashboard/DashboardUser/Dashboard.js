@@ -7,8 +7,6 @@ class Dashboard extends Component {
 
     //LifecycleMethods
     componentDidMount() {
-        this.props.onLoad();
-        this.props.getLocation()
     }
 
     render() {
