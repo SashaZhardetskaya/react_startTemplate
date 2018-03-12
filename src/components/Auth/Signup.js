@@ -7,6 +7,27 @@ import {Link} from 'react-router-dom';
 const SignUp = () => {
 
     //Renders
+    const renderSignupFormInputs = () => (
+        <div className="list-group list-group-sm">
+            <div className="list-group-item">
+                <input
+                    type="email"
+                    placeholder="Email"
+                    className="form-control no-border"
+                    required
+                />
+            </div>
+            <div className="list-group-item">
+                <input
+                    type="password"
+                    placeholder="Password"
+                    className="form-control no-border"
+                    required
+                />
+            </div>
+        </div>
+    );
+
     const renderSignupForm = () => (
         <form
             name="form"
@@ -36,27 +57,6 @@ const SignUp = () => {
                 Login
             </Link>
         </form>
-    );
-
-    const renderSignupFormInputs = () => (
-        <div className="list-group list-group-sm">
-            <div className="list-group-item">
-                <input
-                    type="email"
-                    placeholder="Email"
-                    className="form-control no-border"
-                    required
-                />
-            </div>
-            <div className="list-group-item">
-                <input
-                    type="password"
-                    placeholder="Password"
-                    className="form-control no-border"
-                    required
-                />
-            </div>
-        </div>
     );
 
     return (

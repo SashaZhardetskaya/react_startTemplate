@@ -11,30 +11,12 @@ class Dashboard extends Component {
         this.props.getLocation()
     }
 
-    //Renders
-    renderDashboardHeader = () => (
-        <div className="bg-light lter b-b wrapper-md">
-            <div className="row">
-                <div className="col-sm12 col-xs-12">
-                    <h1 className="m-n font-thin h3 text-black">
-                        The Dashboard
-                    </h1>
-                    <small className="text-muted">
-                        Everything Starts Here
-                    </small>
-                </div>
-            </div>
-        </div>
-    );
-
-
     render() {
         return (
             <div
                 id="content-container"
                 className="content-wrapper"
             >
-                {this.renderDashboardHeader()}
                 <section className="content">
                     <div className="row">
                         <CourseStatusContainer/>

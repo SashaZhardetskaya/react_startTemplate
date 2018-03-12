@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Link, Redirect, Route, Switch} from "react-router-dom";
+// import {Link, Redirect, Route, Switch} from "react-router-dom";
+import {Redirect, Route, Switch} from "react-router-dom";
 
 import '../assets/css/all.css';
 
@@ -58,7 +59,7 @@ const App = ({collapsed, expandedOnHover}) => (
                 component={DashboardContainer}
             />
 
-            <Route path = "*" component = {NotFound}/>
+            <Route path="*" component={NotFound}/>
         </Switch>
 
         <footer

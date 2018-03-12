@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 
-function NotFound() {
+const NotFound = () => {
     return (
         <div
             className="content-wrapper"
@@ -19,6 +19,6 @@ function NotFound() {
             </h2>
         </div>
     )
-}
+};
 
 export default NotFound

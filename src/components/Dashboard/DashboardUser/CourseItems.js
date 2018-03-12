@@ -13,16 +13,19 @@ class CourseItems extends Component {
 
     //Actions
     handleChangeShake = (index) => {
-        this.setState({
-            el: index,
-            courseClassName: "disabled-course-click"
-        });
-
-        setTimeout(() => {
-            this.setState({
-                courseClassName: ''
-            })
-        }, 500);
+        this.setState(
+            {
+                el: index,
+                courseClassName: "disabled-course-click"
+            },
+            () => {
+                setTimeout(() => {
+                    this.setState({
+                        courseClassName: ''
+                    })
+                }, 500);
+            }
+        );
     };
 
     //Renders
